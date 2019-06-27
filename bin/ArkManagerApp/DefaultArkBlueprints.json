@@ -1,0 +1,63 @@
+/* Created by Chase Roth 5/21/2019 - 3am EST*/
+[
+  {
+    "_BlueprintType": "Longneck",
+    "_Resources": [
+      {
+        "_ResourceType": "Metal",
+        "_Quantity": "100"
+      },
+      {
+        "_ResourceType": "Wood",
+        "_Quantity": "75"
+      },
+      {
+        "_ResourceType": "Hide",
+        "_Quantity": "125"
+      }
+    ]
+  },
+  {
+    "_BlueprintType": "Turtle Saddle",
+    "_Resources": [
+      {
+        "_ResourceType": "Fiber",
+        "_Quantity": "150"
+      },
+      {
+        "_ResourceType": "Paste",
+        "_Quantity": "125"
+      },
+      {
+        "_ResourceType": "Hide",
+        "_Quantity": "200"
+      }
+    ]
+  },
+  {
+    "_BlueprintType": "Metal Wall",
+    "_Resources": [
+      {
+        "_ResourceType": "Metal",
+        "_Quantity": "25"
+      },
+      {
+        "_ResourceType": "Paste",
+        "_Quantity": "7"
+      }
+    ]
+  },
+  {
+    "_BlueprintType": "Metal Foundation",
+    "_Resources": [
+      {
+        "_ResourceType": "Metal",
+        "_Quantity": "50"
+      },
+      {
+        "_ResourceType": "Paste",
+        "_Quantity": "15"
+      }
+    ]
+  }
+]

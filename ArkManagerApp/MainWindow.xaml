@@ -1,0 +1,15 @@
+﻿<Window x:Class="ArkManagerApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArkManagerApp"
+        xmlns:MyNamespace="clr-namespace:ArkManager;assembly=ArkManager"
+        mc:Ignorable="d"
+        Title="Ark Manager" Height="300" Width="550">
+    <Grid x:Name="MainGrid">
+        <Label Content="Select a blueprint" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Width="140" Padding="0"/>
+        <ComboBox x:Name="ComboBoxOfBlueprints" IsEditable="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="5,30,0,0" SelectionChanged="ComboBoxOfBlueprints_SelectionChanged"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+C:\Dev\ArkManager\ArkManager\bin\Debug\ArkManager.dll
+C:\Dev\ArkManager\ArkManager\bin\Debug\ArkManager.pdb
+C:\Dev\ArkManager\ArkManager\bin\Debug\Newtonsoft.Json.dll
+C:\Dev\ArkManager\ArkManager\bin\Debug\Newtonsoft.Json.xml
+C:\Dev\ArkManager\ArkManager\obj\Debug\ArkManager.csprojAssemblyReference.cache
+C:\Dev\ArkManager\ArkManager\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Dev\ArkManager\ArkManager\obj\Debug\ArkManager_MarkupCompile.cache
+C:\Dev\ArkManager\ArkManager\obj\Debug\ArkManager_MarkupCompile.lref
+C:\Dev\ArkManager\ArkManager\obj\Debug\Themes\Generic.baml
+C:\Dev\ArkManager\ArkManager\obj\Debug\ArkManager.g.resources
+C:\Dev\ArkManager\ArkManager\obj\Debug\ArkManager.Properties.Resources.resources
+C:\Dev\ArkManager\ArkManager\obj\Debug\ArkManager.csproj.GenerateResource.cache
+C:\Dev\ArkManager\ArkManager\obj\Debug\ArkManager.csproj.CoreCompileInputs.cache
+C:\Dev\ArkManager\ArkManager\obj\Debug\ArkManager.csproj.CopyComplete
+C:\Dev\ArkManager\ArkManager\obj\Debug\ArkManager.dll
+C:\Dev\ArkManager\ArkManager\obj\Debug\ArkManager.pdb
