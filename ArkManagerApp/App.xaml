@@ -7,16 +7,17 @@
         <!-- Setting default font size for app -->
         <Style TargetType="{x:Type Window}">
             <Setter Property="FontSize" Value="14" />
+            <Setter Property="Foreground" Value="White"/>
         </Style>
-
-        <Style TargetType="TextBox">
+        
+        <!--<Style TargetType="TextBox">
             <Setter Property="Background" Value="AliceBlue"/>
             <Setter Property="BorderBrush" Value="LightSlateGray"/>
         </Style>
         <Style TargetType="Button">
             <Setter Property="Background" Value="AliceBlue"/>
             <Setter Property="BorderBrush" Value="LightSlateGray"/>
-        </Style>
+        </Style>-->
         <!--<Style x:Key="MyUITheme" TargetType="{x:Type Control}">
             <Setter Property="Background" Value="AliceBlue"/>
             <Setter Property="BorderBrush" Value="LightSlateGray"/>

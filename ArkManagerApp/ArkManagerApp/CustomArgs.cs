@@ -11,17 +11,17 @@ namespace ArkManagerApp
     {
         MainWindow mainWindow;       
         ComboBox searchComboBox;
-        Grid mainGrid;
+        Grid blueprintCreationGrid;
 
         public ComboBox SearchComboBox { get => searchComboBox; set => searchComboBox = value; }
-        public Grid MainGrid { get => mainGrid; set => mainGrid = value; }
+        public Grid BlueprintCreationGrid { get => blueprintCreationGrid; set => blueprintCreationGrid = value; }
         public MainWindow MainWindow { get => mainWindow; set => mainWindow = value; }
 
-        public BlueprintSearchedArgs(MainWindow _mainWindow, ComboBox _comboBox, Grid _mainGrid)
+        public BlueprintSearchedArgs(MainWindow _mainWindow, ComboBox _comboBox, Grid _blueprintCreationGrid)
         {
             MainWindow = _mainWindow;
             SearchComboBox = _comboBox;
-            MainGrid = _mainGrid;
+            BlueprintCreationGrid = _blueprintCreationGrid;
         }
     }
 

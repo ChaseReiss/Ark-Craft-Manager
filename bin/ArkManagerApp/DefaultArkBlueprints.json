@@ -4,7 +4,7 @@
     "_BlueprintType": "Longneck",
     "_Resources": [
       {
-        "_ResourceType": "Metal",
+        "_ResourceType": "Metal_Ingots",
         "_Quantity": "100"
       },
       {
@@ -38,7 +38,7 @@
     "_BlueprintType": "Metal Wall",
     "_Resources": [
       {
-        "_ResourceType": "Metal",
+        "_ResourceType": "Metal_Ingots",
         "_Quantity": "25"
       },
       {
@@ -51,12 +51,49 @@
     "_BlueprintType": "Metal Foundation",
     "_Resources": [
       {
-        "_ResourceType": "Metal",
+        "_ResourceType": "Metal_Ingots",
         "_Quantity": "50"
       },
       {
         "_ResourceType": "Paste",
         "_Quantity": "15"
+      }
+    ]
+  },
+  {
+    "_BlueprintType": "Poison Grenade",
+    "_Resources": [
+      {
+        "_ResourceType": "Narcotic",
+        "_Quantity": "10"
+      },
+      {
+        "_ResourceType": "Charcoal",
+        "_Quantity": "14"
+      },
+      {
+        "_ResourceType": "Metal_Ingots",
+        "_Quantity": "5"
+      },
+      {
+        "_ResourceType": "Sparkpowder",
+        "_Quantity": "18"
+      },
+      {
+        "_ResourceType": "Gunpowder",
+        "_Quantity": "12"
+      },
+      {
+        "_ResourceType": "Crystal",
+        "_Quantity": "5"
+      },
+      {
+        "_ResourceType": "Fiber",
+        "_Quantity": "20"
+      },
+      {
+        "_ResourceType": "Flint",
+        "_Quantity": "5"
       }
     ]
   }

@@ -13,6 +13,7 @@ namespace ArkManager
     {
         public static readonly Dictionary<string,Blueprint> Blueprints = ReadJsonFiles();
         public static Blueprint userBlueprint;
+        public static bool[] FieldBools;
 
         /// <summary>
         ///     Reading from a Json Files to create the program's list of blueprints

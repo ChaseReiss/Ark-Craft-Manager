@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace ArkManagerApp
 {
-    public delegate Task SelectedBlueprintDel(BlueprintSearchedArgs e);         // For updateing UI base off the comboBox in blueprint creation section.
-    public delegate Task TextBoxFieldChangedDel(TextBoxFieldChangedArgs e);     // For interpreting textBox text field and providing feed back to the user.
+    public delegate void SelectedBlueprintDel(BlueprintSearchedArgs e);         // For updateing UI base off the comboBox in blueprint creation section.
+    public delegate void TextBoxFieldChangedDel(TextBoxFieldChangedArgs e);     // For interpreting textBox text field and providing feed back to the user.
 }

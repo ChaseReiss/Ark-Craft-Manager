@@ -23,6 +23,7 @@ namespace ArkManagerApp
     {
         public event SelectedBlueprintDel OnSelectSearch;         // Event for when comboBox search changes
         public event TextBoxFieldChangedDel OnTextBoxLostFocus;   // Event for when TextBox in blueprint creation loses user focus
+        public event EventHandler OnCreateBlueprintButtonPressed;       // Event for when the user pressed the create button
 
         public MainWindow()
         {
@@ -31,6 +32,7 @@ namespace ArkManagerApp
 
             OnSelectSearch += BlueprintCreationUI.OnTestBlueprintSelection;
             OnTextBoxLostFocus += BlueprintCreationUI.OnTestBlueprintTextBoxField;
+            OnCreateBlueprintButtonPressed += BlueprintCreationUI.OnCreateBlueprintButtonClicked;
 
             foreach (var blueprint in Data.Blueprints.Values)
             {
@@ -41,13 +43,18 @@ namespace ArkManagerApp
         
         private void ComboBoxOfBlueprints_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            OnSelectSearch?.Invoke(new BlueprintSearchedArgs(this, ComboBoxOfBlueprints, MainGrid));
+            OnSelectSearch?.Invoke(new BlueprintSearchedArgs(this, ComboBoxOfBlueprints, BlueprintCreationGrid));
         }
 
 
         public void TextBox_FieldChanged(object sender, RoutedEventArgs e)
         {
-            OnTextBoxLostFocus?.Invoke(new TextBoxFieldChangedArgs((TextBox)sender));
+            OnTextBoxLostFocus?.Invoke(new TextBoxFieldChangedArgs((TextBox)sender));           
+        }
+
+        public void CreateBlueprintButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            OnCreateBlueprintButtonPressed?.Invoke(sender, e);
         }
     }
 }
