@@ -13,16 +13,23 @@
             <ColumnDefinition Width="81*"/>
         </Grid.ColumnDefinitions>
         <TabControl HorizontalAlignment="Left" Height="371" Margin="-1,-1,0,0" VerticalAlignment="Top" Width="543" Grid.ColumnSpan="2">
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5"/>
+            <TabItem Header="My BP's">
+                <Grid x:Name="MyBlueprintsGrid">
+                    <Label Content="Search your blueprints" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top"/>
+
+                </Grid>
             </TabItem>
-            <TabItem Header="TabItem">
-                <Grid x:Name="BlueprintCreationGrid" Background="White" Height="auto" Margin="0,0,-0.333,-5.333">
-                    <ComboBox x:Name="ComboBoxOfBlueprints" IsEditable="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="5,25,0,0" SelectionChanged="ComboBoxOfBlueprints_SelectionChanged"/>
+            <TabItem Header="Create">
+                <Grid x:Name="CreateBlueprintGrid" Background="White" Height="auto" Margin="0,0,-0.333,-5.333">
+
                     <Label Content="Select a blueprint" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="140" Padding="0"/>
+
                 </Grid>
             </TabItem>
         </TabControl>
 
+        <ComboBox x:Name="ComboBoxOfBlueprints" IsEditable="True" VerticalAlignment="Top" Margin="10,51,0,0" SelectionChanged="ComboBoxOfBlueprints_SelectionChanged" HorizontalAlignment="Left" Width="140"/>
+
     </Grid>
+
 </Window>

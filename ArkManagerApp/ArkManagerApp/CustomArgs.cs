@@ -25,15 +25,15 @@ namespace ArkManagerApp
         }
     }
 
-    public class TextBoxFieldChangedArgs : EventArgs
+    public class TestFieldsForBlueprintCreation : EventArgs
     {
-        TextBox textBox;
+        Grid blueprintCreationGrid;
 
-        public TextBox TextBox { get => textBox; set => textBox = value; }
+        public Grid BlueprintCreateGrid { get => blueprintCreationGrid; set => blueprintCreationGrid = value; }
 
-        public TextBoxFieldChangedArgs(TextBox _textBox)
+        public TestFieldsForBlueprintCreation(Grid _blueprintCreateGrid)
         {
-            TextBox = _textBox;
+            BlueprintCreateGrid = _blueprintCreateGrid;
         }
     }
 }

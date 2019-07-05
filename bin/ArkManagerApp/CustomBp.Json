@@ -45,14 +45,18 @@
         "Quantity": 987
       }
     ]
+  },
+  {
+    "BlueprintType": "Metal Wall",
+    "Resources": [
+      {
+        "ResourceType": "Metal_Ingots",
+        "Quantity": 123
+      },
+      {
+        "ResourceType": "Paste",
+        "Quantity": 123
+      }
+    ]
   }
 ]
-	{
-		"BlueprintType":"Metal Wall",
-		"Resources":	[
-		{
-		"ResourceType":"Metal_Ingots","Quantity":25},
-		{"ResourceType":"Paste","Quantity":7}
-		]
-	}
-,{"BlueprintType":"Longneck","Resources":[{"ResourceType":"Metal_Ingots","Quantity":100},{"ResourceType":"Wood","Quantity":75},{"ResourceType":"Hide","Quantity":125}]}]
