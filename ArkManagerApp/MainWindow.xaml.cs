@@ -21,31 +21,33 @@ namespace ArkManagerApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        public event Action<BlueprintSearchedArgs> OnCreateBlueprintSearch, OnBrowseMyBlueprintsSearch;         // Event for when comboBox search changes
-        public event Action<TestFieldsForBlueprintCreation> OnTryCreateBlueprintInstance;                       // Event for when the user pressed the create button
+        public event Action<BlueprintSearchedArgs> OnCreateBlueprintSearch, OnMyBlueprintsSearch;         // Event for when comboBox search changes
+        public event Action<TestFieldsForBlueprintCreation> OnTryCreateBlueprintInstance;                 // Event for when the user pressed the create button
 
         public MainWindow()
         {
             InitializeComponent();
             Style = (Style)FindResource(typeof(Window));
 
-            OnBrowseMyBlueprintsSearch += MyBlueprintsGUI.PlaceHolder;
+            OnMyBlueprintsSearch += MyBlueprintsGUI.PlaceHolder;
             OnCreateBlueprintSearch += CreateBlueprintGUI.OnTestBlueprintSelection;
             OnTryCreateBlueprintInstance += CreateBlueprintGUI.TryToCreateBlueprintInstance;
 
             foreach (var blueprint in Data.Blueprints.Values)
             {
                 // Populating our comboBox's Items with blueprints
-                ComboBoxOfBlueprints.Items.Add(blueprint.BlueprintType);
+                CreateBlueprintComboBox.Items.Add(blueprint.BlueprintType);                   
             }
         }
         
         private void ComboBoxOfBlueprints_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
+        {   
+            // If the UI for my blueprints is loaded, fire this event
             if (MyBlueprintsGrid.IsLoaded)
-                OnBrowseMyBlueprintsSearch?.Invoke(new BlueprintSearchedArgs(this, ComboBoxOfBlueprints, MyBlueprintsGrid));
+                OnMyBlueprintsSearch?.Invoke(new BlueprintSearchedArgs(this, MyBlueprintsComboBox, MyBlueprintsGrid));
+            // Otherwise if the UI for creating a blueprint is loaded fire this event
             else if (CreateBlueprintGrid.IsLoaded)
-                OnCreateBlueprintSearch?.Invoke(new BlueprintSearchedArgs(this, ComboBoxOfBlueprints, CreateBlueprintGrid));
+                OnCreateBlueprintSearch?.Invoke(new BlueprintSearchedArgs(this, CreateBlueprintComboBox, CreateBlueprintGrid));         
         }
 
         public void CreateBlueprintButton_Clicked(object sender, RoutedEventArgs e)

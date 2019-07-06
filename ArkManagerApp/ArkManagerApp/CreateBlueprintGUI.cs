@@ -16,6 +16,8 @@ namespace ArkManagerApp
 {
     public struct CreateBlueprintGUI
     {
+        private static int REMOVE_OUTDATED_UI_ELEMENTS_INDEX = 2;
+
         public static void OnTestBlueprintSelection(BlueprintSearchedArgs e)
         {
             TestBlueprintSelection(e);
@@ -33,7 +35,7 @@ namespace ArkManagerApp
             Data.userBlueprint = _selectedBlueprint;
 
             // Need to clear the MainGrid of the old UI elements
-            e.BlueprintCreationGrid.Children.RemoveRange(1, e.BlueprintCreationGrid.Children.Count);
+            e.BlueprintCreationGrid.Children.RemoveRange(REMOVE_OUTDATED_UI_ELEMENTS_INDEX, e.BlueprintCreationGrid.Children.Count);
 
             int topMargin = 70;
 
