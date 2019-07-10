@@ -21,40 +21,43 @@ namespace ArkManagerApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        public event SelectedBlueprintDel OnSelectSearch;         // Event for when comboBox search changes
-        public event TextBoxFieldChangedDel OnTextBoxLostFocus;   // Event for when TextBox in blueprint creation loses user focus
-        public event EventHandler OnCreateBlueprintButtonPressed;       // Event for when the user pressed the create button
+        public event Action<BlueprintSearchedArgs> OnCreateBlueprintSearch, OnMyBlueprintsSearch;         // Event for when comboBox search changes
+        public event Action<TestFieldsForBlueprintCreation> OnTryCreateBlueprintInstance;                 // Event for when the user pressed the create button
 
         public MainWindow()
         {
             InitializeComponent();
             Style = (Style)FindResource(typeof(Window));
 
-            OnSelectSearch += BlueprintCreationUI.OnTestBlueprintSelection;
-            OnTextBoxLostFocus += BlueprintCreationUI.OnTestBlueprintTextBoxField;
-            OnCreateBlueprintButtonPressed += BlueprintCreationUI.OnCreateBlueprintButtonClicked;
+            OnMyBlueprintsSearch += MyBlueprintsGUI.PlaceHolder;
+            OnCreateBlueprintSearch += CreateBlueprintGUI.OnTestBlueprintSelection;
+            OnTryCreateBlueprintInstance += CreateBlueprintGUI.TryToCreateBlueprintInstance;
 
-            foreach (var blueprint in Data.Blueprints.Values)
+            foreach (var blueprint in Data.Blueprints)
             {
                 // Populating our comboBox's Items with blueprints
-                ComboBoxOfBlueprints.Items.Add(blueprint.BlueprintType);
+                CreateBlueprintComboBox.Items.Add(blueprint.BlueprintType);                   
+            }
+
+            foreach (var blueprint in Data.UserCreatedBlueprints)
+            {
+                MyBlueprintsComboBox.Items.Add(blueprint.BlueprintType);
             }
         }
         
         private void ComboBoxOfBlueprints_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            OnSelectSearch?.Invoke(new BlueprintSearchedArgs(this, ComboBoxOfBlueprints, BlueprintCreationGrid));
-        }
-
-
-        public void TextBox_FieldChanged(object sender, RoutedEventArgs e)
-        {
-            OnTextBoxLostFocus?.Invoke(new TextBoxFieldChangedArgs((TextBox)sender));           
+        {   
+            // If the UI for my blueprints is loaded, fire this event
+            if (MyBlueprintsGrid.IsLoaded)
+                OnMyBlueprintsSearch?.Invoke(new BlueprintSearchedArgs(this, MyBlueprintsComboBox, MyBlueprintsGrid));
+            // Otherwise if the UI for creating a blueprint is loaded fire this event
+            else if (CreateBlueprintGrid.IsLoaded)
+                OnCreateBlueprintSearch?.Invoke(new BlueprintSearchedArgs(this, CreateBlueprintComboBox, CreateBlueprintGrid));         
         }
 
         public void CreateBlueprintButton_Clicked(object sender, RoutedEventArgs e)
         {
-            OnCreateBlueprintButtonPressed?.Invoke(sender, e);
+            OnTryCreateBlueprintInstance?.Invoke(new TestFieldsForBlueprintCreation(CreateBlueprintGrid));
         }
     }
 }

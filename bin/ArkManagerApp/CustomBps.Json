@@ -1,0 +1,45 @@
+[
+  {
+    "BlueprintType": "Metal Foundation",
+    "Resources": [
+      {
+        "ResourceType": "Metal_Ingots",
+        "Quantity": 6
+      },
+      {
+        "ResourceType": "Paste",
+        "Quantity": 875
+      }
+    ]
+  },
+  {
+    "BlueprintType": "Longneck",
+    "Resources": [
+      {
+        "ResourceType": "Metal_Ingots",
+        "Quantity": 987
+      },
+      {
+        "ResourceType": "Wood",
+        "Quantity": 896
+      },
+      {
+        "ResourceType": "Hide",
+        "Quantity": 986
+      }
+    ]
+  },
+  {
+    "BlueprintType": "Metal Wall",
+    "Resources": [
+      {
+        "ResourceType": "Metal_Ingots",
+        "Quantity": 123
+      },
+      {
+        "ResourceType": "Paste",
+        "Quantity": 123
+      }
+    ]
+  }
+,{"BlueprintType":"Metal Foundation","Resources":[{"ResourceType":"MetalIngots","Quantity":66},{"ResourceType":"Paste","Quantity":66}]}]

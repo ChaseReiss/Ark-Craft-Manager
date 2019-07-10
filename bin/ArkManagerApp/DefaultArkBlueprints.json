@@ -1,99 +1,98 @@
-/* Created by Chase Roth 5/21/2019 - 3am EST*/
 [
   {
-    "_BlueprintType": "Longneck",
-    "_Resources": [
+    "BlueprintType": "Longneck",
+    "Resources": [
       {
-        "_ResourceType": "Metal_Ingots",
-        "_Quantity": "100"
+        "ResourceType": "MetalIngots",
+        "Quantity": "100"
       },
       {
-        "_ResourceType": "Wood",
-        "_Quantity": "75"
+        "ResourceType": "Wood",
+        "Quantity": "75"
       },
       {
-        "_ResourceType": "Hide",
-        "_Quantity": "125"
+        "ResourceType": "Hide",
+        "Quantity": "125"
       }
     ]
   },
   {
-    "_BlueprintType": "Turtle Saddle",
-    "_Resources": [
+    "BlueprintType": "Turtle Saddle",
+    "Resources": [
       {
-        "_ResourceType": "Fiber",
-        "_Quantity": "150"
+        "ResourceType": "Fiber",
+        "Quantity": "150"
       },
       {
-        "_ResourceType": "Paste",
-        "_Quantity": "125"
+        "ResourceType": "Paste",
+        "Quantity": "125"
       },
       {
-        "_ResourceType": "Hide",
-        "_Quantity": "200"
+        "ResourceType": "Hide",
+        "Quantity": "200"
       }
     ]
   },
   {
-    "_BlueprintType": "Metal Wall",
-    "_Resources": [
+    "BlueprintType": "Metal Wall",
+    "Resources": [
       {
-        "_ResourceType": "Metal_Ingots",
-        "_Quantity": "25"
+        "ResourceType": "MetalIngots",
+        "Quantity": "25"
       },
       {
-        "_ResourceType": "Paste",
-        "_Quantity": "7"
+        "ResourceType": "Paste",
+        "Quantity": "7"
       }
     ]
   },
   {
-    "_BlueprintType": "Metal Foundation",
-    "_Resources": [
+    "BlueprintType": "Metal Foundation",
+    "Resources": [
       {
-        "_ResourceType": "Metal_Ingots",
-        "_Quantity": "50"
+        "ResourceType": "MetalIngots",
+        "Quantity": "50"
       },
       {
-        "_ResourceType": "Paste",
-        "_Quantity": "15"
+        "ResourceType": "Paste",
+        "Quantity": "15"
       }
     ]
   },
   {
-    "_BlueprintType": "Poison Grenade",
-    "_Resources": [
+    "BlueprintType": "Poison Grenade",
+    "Resources": [
       {
-        "_ResourceType": "Narcotic",
-        "_Quantity": "10"
+        "ResourceType": "Narcotic",
+        "Quantity": "10"
       },
       {
-        "_ResourceType": "Charcoal",
-        "_Quantity": "14"
+        "ResourceType": "Charcoal",
+        "Quantity": "14"
       },
       {
-        "_ResourceType": "Metal_Ingots",
-        "_Quantity": "5"
+        "ResourceType": "MetalIngots",
+        "Quantity": "5"
       },
       {
-        "_ResourceType": "Sparkpowder",
-        "_Quantity": "18"
+        "ResourceType": "Sparkpowder",
+        "Quantity": "18"
       },
       {
-        "_ResourceType": "Gunpowder",
-        "_Quantity": "12"
+        "ResourceType": "Gunpowder",
+        "Quantity": "12"
       },
       {
-        "_ResourceType": "Crystal",
-        "_Quantity": "5"
+        "ResourceType": "Crystal",
+        "Quantity": "5"
       },
       {
-        "_ResourceType": "Fiber",
-        "_Quantity": "20"
+        "ResourceType": "Fiber",
+        "Quantity": "20"
       },
       {
-        "_ResourceType": "Flint",
-        "_Quantity": "5"
+        "ResourceType": "Flint",
+        "Quantity": "5"
       }
     ]
   }

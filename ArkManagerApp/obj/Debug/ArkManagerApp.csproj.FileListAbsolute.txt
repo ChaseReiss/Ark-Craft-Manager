@@ -1,35 +1,51 @@
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\bin\Debug\ArkManagerApp.exe.config
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\bin\Debug\ArkManagerApp.exe
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\bin\Debug\ArkManagerApp.pdb
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.csprojAssemblyReference.cache
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\obj\Debug\MainWindow.g.cs
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\obj\Debug\App.g.cs
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp_MarkupCompile.cache
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp_MarkupCompile.lref
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\obj\Debug\MainWindow.baml
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.g.resources
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.Properties.Resources.resources
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.csproj.GenerateResource.cache
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.csproj.CoreCompileInputs.cache
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.exe
-C:\Dev\ArkManager\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.pdb
-C:\Dev\ArkManager\ArkManager\bin\ArkManagerApp\ArkManagerApp.exe.config
-C:\Dev\ArkManager\ArkManager\bin\ArkManagerApp\ArkManagerApp.exe
-C:\Dev\ArkManager\ArkManager\bin\ArkManagerApp\ArkManagerApp.pdb
-C:\Dev\ArkManager\bin\ArkManagerApp\ArkManagerApp.exe.config
-C:\Dev\ArkManager\bin\ArkManagerApp\ArkManagerApp.exe
-C:\Dev\ArkManager\bin\ArkManagerApp\ArkManagerApp.pdb
-C:\Dev\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.csprojAssemblyReference.cache
-C:\Dev\ArkManager\ArkManagerApp\obj\Debug\MainWindow.g.cs
-C:\Dev\ArkManager\ArkManagerApp\obj\Debug\App.g.cs
-C:\Dev\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp_MarkupCompile.cache
-C:\Dev\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp_MarkupCompile.lref
-C:\Dev\ArkManager\ArkManagerApp\obj\Debug\MainWindow.baml
-C:\Dev\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.g.resources
-C:\Dev\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.Properties.Resources.resources
-C:\Dev\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.csproj.GenerateResource.cache
-C:\Dev\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.csproj.CoreCompileInputs.cache
-C:\Dev\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.csproj.CopyComplete
-C:\Dev\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.exe
-C:\Dev\ArkManager\ArkManagerApp\obj\Debug\ArkManagerApp.pdb
-C:\Dev\ArkManager\ArkManagerApp\obj\Debug\App.baml
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\bin\ArkManagerApp\ArkManagerApp.exe.config
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\bin\ArkManagerApp\ArkManagerApp.exe
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\bin\ArkManagerApp\ArkManagerApp.pdb
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\MainWindow.g.cs
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\App.g.cs
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp_MarkupCompile.cache
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp_MarkupCompile.lref
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\App.baml
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\MainWindow.baml
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.g.resources
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.Properties.Resources.resources
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.csproj.GenerateResource.cache
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.csproj.CoreCompileInputs.cache
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.csproj.CopyComplete
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.exe
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.pdb
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.csprojAssemblyReference.cache
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.csprojAssemblyReference.cache
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\MainWindow.g.cs
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\App.g.cs
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp_MarkupCompile.cache
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp_MarkupCompile.lref
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.exe
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.pdb
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\bin\ArkManagerApp\ArkManagerApp.exe.config
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\bin\ArkManagerApp\ArkManagerApp.exe
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\bin\ArkManagerApp\ArkManagerApp.pdb
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\App.baml
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\MainWindow.baml
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.g.resources
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.Properties.Resources.resources
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.csproj.GenerateResource.cache
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.csproj.CoreCompileInputs.cache
+C:\Users\Chase Roth\Desktop\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.csproj.CopyComplete
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\bin\ArkManagerApp\ArkManagerApp.exe.config
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\bin\ArkManagerApp\ArkManagerApp.exe
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\bin\ArkManagerApp\ArkManagerApp.pdb
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.csprojAssemblyReference.cache
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\MainWindow.g.cs
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\App.g.cs
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp_MarkupCompile.cache
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp_MarkupCompile.lref
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\App.baml
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\MainWindow.baml
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.g.resources
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.Properties.Resources.resources
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.csproj.GenerateResource.cache
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.csproj.CoreCompileInputs.cache
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.csproj.CopyComplete
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.exe
+C:\Users\cxr69\OneDrive\Desktop\Ark-Manager-BPCreation1 (5)\Ark-Manager-BPCreation1\ArkManagerApp\obj\Debug\ArkManagerApp.pdb

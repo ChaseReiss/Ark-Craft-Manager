@@ -11,25 +11,24 @@ namespace ArkManager
 {
     public static class Data
     {
-        public static readonly Dictionary<string,Blueprint> Blueprints = ReadJsonFiles();
+
+        // CHANGED DICTONARY FOR BLUEPRINTS TO LIST AND FIX JSON READER CAUSE OF IT BACK TO RETURN LIST<BLUEPRINT>
+        public static readonly string DEFAULT_BPS_PATH = @"DefaultArkBlueprints.json";
+        public static readonly string USER_CREATED_BLUEPRINTS_PATH = @"CustomBps.json";
+
+        public static readonly List<Blueprint> Blueprints = ReadJsonFiles(DEFAULT_BPS_PATH);
+        public static readonly List<Blueprint> UserCreatedBlueprints = ReadJsonFiles(USER_CREATED_BLUEPRINTS_PATH);
         public static Blueprint userBlueprint;
-        public static bool[] FieldBools;
 
         /// <summary>
         ///     Reading from a Json Files to create the program's list of blueprints
         /// </summary>
-        static Dictionary<string, Blueprint> ReadJsonFiles()
+        static List<Blueprint> ReadJsonFiles(string _path)
         {
             // Side note, the program looks inside bin\debug for the files by default...
-            List<Blueprint> blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(File.ReadAllText(@"DefaultArkBlueprints.json"));
-            Dictionary<string, Blueprint> convertBlueprints = new Dictionary<string, Blueprint>(0);
+            List<Blueprint> blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(File.ReadAllText(_path));
 
-            foreach (var bps in blueprints)
-            {
-                convertBlueprints.Add(bps.BlueprintType, bps);
-            }
-
-            return convertBlueprints;
+            return blueprints;
         }
     }
 }
