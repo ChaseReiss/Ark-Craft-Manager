@@ -18,7 +18,7 @@ namespace ArkManagerApp
     {
         public static void PlaceHolder(BlueprintSearchedArgs e)
         {
-            MessageBox.Show("MyBlueprints invoked");
+            CreateBlueprintGUI.OnTestBlueprintSelection(e);
         }
     }
 }

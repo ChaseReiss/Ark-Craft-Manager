@@ -159,6 +159,7 @@ namespace ArkManagerApp
                     if (Data.userBlueprint.Resources.All(x => x.Quantity != 0))
                     {
                         // NEED TO ADD CODE FOR WHEN THE FILE CONTAINS NO BLUEPRINTS
+                        // NEED TO FIX THE ABSENCE OF UNDERSCORES WHEN WRITING MULTI WORD STRINGS TO FILE
                         string jsonString = JsonConvert.SerializeObject(Data.userBlueprint);
                         
                         StreamReader reader = new StreamReader(Data.USER_CREATED_BLUEPRINTS_PATH);
