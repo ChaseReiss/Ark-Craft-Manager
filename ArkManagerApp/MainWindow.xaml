@@ -13,6 +13,9 @@
                 <Grid x:Name="MyBlueprintsGrid">
                     <Label Content="Search your blueprints" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Padding="0"/>
                     <ComboBox x:Name="MyBlueprintsComboBox" IsEditable="True" VerticalAlignment="Top" Margin="5,25,0,0" SelectionChanged="ComboBoxOfBlueprints_SelectionChanged" HorizontalAlignment="Left" Width="140"/>
+                    <!-- Radio buttons control list's listing method -->
+                    <RadioButton Content="My Blueprints" Height="20" Margin="148,18,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <RadioButton Content="Default Blueprints" Height="20" Margin="148,36,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Create">

@@ -33,12 +33,14 @@ namespace ArkManagerApp
             OnCreateBlueprintSearch += CreateBlueprintGUI.OnTestBlueprintSelection;
             OnTryCreateBlueprintInstance += CreateBlueprintGUI.TryToCreateBlueprintInstance;
 
+            // Adding all the blueprints to the Create ComboBox
             foreach (var blueprint in Data.Blueprints)
             {
                 // Populating our comboBox's Items with blueprints
                 CreateBlueprintComboBox.Items.Add(blueprint.BlueprintType);                   
             }
 
+            // Adding all the blueprints to the 'My blueprints comboBox'
             foreach (var blueprint in Data.UserCreatedBlueprints)
             {
                 MyBlueprintsComboBox.Items.Add(blueprint.BlueprintType);

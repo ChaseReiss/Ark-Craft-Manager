@@ -25,9 +25,26 @@ namespace ArkManagerApp
 
         public static void TestBlueprintSelection(BlueprintSearchedArgs e)
         {
-            // Finding and passing in the blueprint that has the same name as the name selected in the comboBox
-            // We only grab the first instance because there should only ever be one exact match
-            CreatePanelComponents(e, Data.Blueprints.Where(x => x.BlueprintType == e.SearchComboBox.SelectedItem.ToString()).First());
+            var meow = Data.Blueprints.Where(x => x.BlueprintType == e.SearchComboBox.Text).First();
+            MessageBox.Show(meow.BlueprintType + " and " + e.SearchComboBox.Text);
+            // Finding the matching blueprint the user has selected            
+            //try
+            //{   //.Where(x => x.BlueprintType == e.SearchComboBox.SelectedItem.ToString()).First();
+
+            //    // NEED TO MAKE THIS SAFE, RIGHT NOW IT BLOWS UP IF I TYPE LIKE CHAR 'S' INTO COMBOBOX SEARCH FIELD
+            //    // when it runs and gets 's' maybe we shouldnt use selectedItem maybe something else cause we are trying to select
+            //    Blueprint bp = Data.Blueprints.Where(x => x.BlueprintType == e.SearchComboBox.SelectedItem.ToString()).First();
+
+            //    // Populate the Mainwindow if a blueprint was choosen
+            //    if (bp != null)
+            //    {
+            //        CreatePanelComponents(e, bp);
+            //    }
+            //}
+            //catch
+            //{
+            //    MessageBox.Show("Thats not a blueprint adada");
+            //}                      
         }
         public static void CreatePanelComponents(BlueprintSearchedArgs e, Blueprint _selectedBlueprint)
         {
@@ -64,12 +81,14 @@ namespace ArkManagerApp
                 // If the name has a _ we need to replace it with a ' ' instead
                 string spaceCharacterAdder()
                 {
+                    // If the string contains a '_' split it there
                     if (resource.ResourceType.Contains('_'))
                     {
                         string[] s = new string[2];
                         s = resource.ResourceType.Split('_');
                         return s[0] + " " + s[1];
                     }
+                    // Otherwise just return it how it already is
                     else
                     {
                         return resource.ResourceType;
@@ -159,7 +178,6 @@ namespace ArkManagerApp
                     if (Data.userBlueprint.Resources.All(x => x.Quantity != 0))
                     {
                         // NEED TO ADD CODE FOR WHEN THE FILE CONTAINS NO BLUEPRINTS
-                        // NEED TO FIX THE ABSENCE OF UNDERSCORES WHEN WRITING MULTI WORD STRINGS TO FILE
                         string jsonString = JsonConvert.SerializeObject(Data.userBlueprint);
                         
                         StreamReader reader = new StreamReader(Data.USER_CREATED_BLUEPRINTS_PATH);

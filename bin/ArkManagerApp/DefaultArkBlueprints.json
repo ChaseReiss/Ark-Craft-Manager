@@ -3,7 +3,7 @@
     "BlueprintType": "Longneck",
     "Resources": [
       {
-        "ResourceType": "Metal_Ingots",
+        "ResourceType": "MetalIngots",
         "Quantity": "100"
       },
       {
@@ -37,7 +37,7 @@
     "BlueprintType": "Metal Wall",
     "Resources": [
       {
-        "ResourceType": "Metal_Ingots",
+        "ResourceType": "MetalIngots",
         "Quantity": "25"
       },
       {
@@ -50,7 +50,7 @@
     "BlueprintType": "Metal Foundation",
     "Resources": [
       {
-        "ResourceType": "Metal_Ingots",
+        "ResourceType": "MetalIngots",
         "Quantity": "50"
       },
       {
@@ -71,7 +71,7 @@
         "Quantity": "14"
       },
       {
-        "ResourceType": "Metal_Ingots",
+        "ResourceType": "MetalIngots",
         "Quantity": "5"
       },
       {
