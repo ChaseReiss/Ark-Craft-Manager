@@ -88,6 +88,7 @@
     <Compile Include="ArkManagerApp\CreateBlueprintGUI.cs" />
     <Compile Include="ArkManagerApp\CustomArgs.cs" />
     <Compile Include="ArkManagerApp\MyBlueprintsGUI.cs" />
+    <Compile Include="ArkManagerApp\SearchLogistics.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

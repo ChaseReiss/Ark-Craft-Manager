@@ -21,32 +21,41 @@ namespace ArkManagerApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        public event Action<BlueprintSearchedArgs> OnCreateBlueprintSearch, OnMyBlueprintsSearch;         // Event for when comboBox search changes
+        public event Action<BlueprintSearchedArgs> OnCreateBlueprintSearch, OnMyBlueprintsSearch;      // Event for when comboBox search changes
         public event Action<TestFieldsForBlueprintCreation> OnTryCreateBlueprintInstance;                 // Event for when the user pressed the create button
+        //public event Func<BlueprintSearchedArgs, List<string>> OnUpdateComboBoxDropDown;
 
         public MainWindow()
         {
             InitializeComponent();
             Style = (Style)FindResource(typeof(Window));
-
+            
+            // Event for user's created blueprints comboBox
             OnMyBlueprintsSearch += MyBlueprintsGUI.PlaceHolder;
+            // Event for default game blueprints comboBox
             OnCreateBlueprintSearch += CreateBlueprintGUI.OnTestBlueprintSelection;
+            // Event for when the user tries to create a blueprint instance
             OnTryCreateBlueprintInstance += CreateBlueprintGUI.TryToCreateBlueprintInstance;
+            // Event for updating the dropdown menu's items
+            //CreateBlueprintComboBox.TextInput += SearchLogistics.OnTextInputReceived;
+            CreateBlueprintComboBox.KeyUp += SearchLogistics.OnTextInputReceived;
 
-            // Adding all the blueprints to the Create ComboBox
             foreach (var blueprint in Data.Blueprints)
             {
                 // Populating our comboBox's Items with blueprints
-                CreateBlueprintComboBox.Items.Add(blueprint.BlueprintType);                   
+                CreateBlueprintComboBox.Items.Add(new ItemsControl().Name = blueprint.BlueprintType);                   
             }
-
+            ItemsControl meow = new ItemsControl();
+            
             // Adding all the blueprints to the 'My blueprints comboBox'
             foreach (var blueprint in Data.UserCreatedBlueprints)
             {
-                MyBlueprintsComboBox.Items.Add(blueprint.BlueprintType);
+                MyBlueprintsComboBox.Items.Add(new ItemsControl().Name = blueprint.BlueprintType);
             }
         }
+        // NEED TO CHANGED THIS SO THAT OUR ITEMS ARE A OBJECT WITH VISIBILITY PORPERTYS.. easier to set visiable then deleting and adding back alter
         
+
         private void ComboBoxOfBlueprints_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {   
             // If the UI for my blueprints is loaded, fire this event

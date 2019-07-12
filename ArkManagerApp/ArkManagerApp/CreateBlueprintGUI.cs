@@ -25,8 +25,10 @@ namespace ArkManagerApp
 
         public static void TestBlueprintSelection(BlueprintSearchedArgs e)
         {
-            var meow = Data.Blueprints.Where(x => x.BlueprintType == e.SearchComboBox.Text).First();
-            MessageBox.Show(meow.BlueprintType + " and " + e.SearchComboBox.Text);
+           
+
+            //string meow = Data.Blueprints.Where(x => x.BlueprintType == e.SearchComboBox.Items.ToString()).Select(y => y.BlueprintType).First();
+            
             // Finding the matching blueprint the user has selected            
             //try
             //{   //.Where(x => x.BlueprintType == e.SearchComboBox.SelectedItem.ToString()).First();
