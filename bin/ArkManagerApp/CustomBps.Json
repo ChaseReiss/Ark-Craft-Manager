@@ -42,4 +42,4 @@
       }
     ]
   }
-,{"BlueprintType":"Metal Foundation","Resources":[{"ResourceType":"MetalIngots","Quantity":66},{"ResourceType":"Paste","Quantity":66}]}]
+,{"BlueprintType":"Metal Foundation","Resources":[{"ResourceType":"MetalIngots","Quantity":66},{"ResourceType":"Paste","Quantity":66}]},{"BlueprintType":"Poison Grenade","Resources":[{"ResourceType":"Narcotic","Quantity":66},{"ResourceType":"Charcoal","Quantity":66},{"ResourceType":"Metal_Ingots","Quantity":66},{"ResourceType":"Sparkpowder","Quantity":66},{"ResourceType":"Gunpowder","Quantity":66},{"ResourceType":"Crystal","Quantity":66},{"ResourceType":"Fiber","Quantity":66},{"ResourceType":"Flint","Quantity":66}]}]

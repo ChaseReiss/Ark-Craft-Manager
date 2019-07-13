@@ -14,11 +14,11 @@ using Newtonsoft.Json;
 
 namespace ArkManagerApp
 {
-    public struct MyBlueprintsGUI
+    public static class MyBlueprintsGUI
     {
         public static void PlaceHolder(BlueprintSearchedArgs e)
         {
-            MessageBox.Show("MyBlueprints invoked");
-        }
+            
+        }        
     }
 }

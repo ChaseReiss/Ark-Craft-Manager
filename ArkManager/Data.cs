@@ -16,7 +16,7 @@ namespace ArkManager
         public static readonly string DEFAULT_BPS_PATH = @"DefaultArkBlueprints.json";
         public static readonly string USER_CREATED_BLUEPRINTS_PATH = @"CustomBps.json";
 
-        public static readonly List<Blueprint> Blueprints = ReadJsonFiles(DEFAULT_BPS_PATH);
+        public static readonly List<Blueprint> DefaultBlueprints = ReadJsonFiles(DEFAULT_BPS_PATH);
         public static readonly List<Blueprint> UserCreatedBlueprints = ReadJsonFiles(USER_CREATED_BLUEPRINTS_PATH);
         public static Blueprint userBlueprint;
 

@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ArkManager;
+using ArkManager.CustomType;
 
 namespace ArkManagerApp
 {
@@ -37,25 +38,47 @@ namespace ArkManagerApp
             // Event for when the user tries to create a blueprint instance
             OnTryCreateBlueprintInstance += CreateBlueprintGUI.TryToCreateBlueprintInstance;
             // Event for updating the dropdown menu's items
-            //CreateBlueprintComboBox.TextInput += SearchLogistics.OnTextInputReceived;
-            CreateBlueprintComboBox.KeyUp += SearchLogistics.OnTextInputReceived;
-
-            foreach (var blueprint in Data.Blueprints)
-            {
-                // Populating our comboBox's Items with blueprints
-                CreateBlueprintComboBox.Items.Add(new ItemsControl().Name = blueprint.BlueprintType);                   
-            }
-            ItemsControl meow = new ItemsControl();
+            CreateBlueprintComboBox.KeyUp += SearchLogic.OnTextInputReceived;
+            // Event for when the comboBox gets local focus
+            CreateBlueprintComboBox.GotFocus += SearchLogic.GotFocus;
             
-            // Adding all the blueprints to the 'My blueprints comboBox'
-            foreach (var blueprint in Data.UserCreatedBlueprints)
+            // Filling the blueprint creation comboBox with items
+            foreach (var blueprint in Data.DefaultBlueprints)
             {
-                MyBlueprintsComboBox.Items.Add(new ItemsControl().Name = blueprint.BlueprintType);
+                // Populating our comboBox's Items with blueprints  
+                CreateBlueprintComboBox.Items.Add(blueprint.BlueprintType);
+            };
+        }
+
+        // NEED TO CHANGED THIS SO THAT OUR ITEMS ARE A OBJECT WITH VISIBILITY PORPERTYS.. easier to set visiable then deleting and adding back alter
+
+        /// <summary>
+        ///     Fires an event to fill the comboBox's items with the user's created blueprints
+        /// </summary>
+        private void MyBlueprintsRadioBtn_Checked(object sender, RoutedEventArgs e)
+        {
+            MyBlueprintsComboBox.Items.Clear();
+            foreach (var item in Data.UserCreatedBlueprints)
+            {
+                MyBlueprintsComboBox.Items.Add(item.BlueprintType);
             }
         }
-        // NEED TO CHANGED THIS SO THAT OUR ITEMS ARE A OBJECT WITH VISIBILITY PORPERTYS.. easier to set visiable then deleting and adding back alter
-        
 
+        /// <summary>
+        ///     Fires an event to fill the comboBox's items with the default game blueprints
+        /// </summary>
+        private void DefaultBlueprintsRadioBtn_Checked(object sender, RoutedEventArgs e)
+        {
+            MyBlueprintsComboBox.Items.Clear();
+            foreach (var item in Data.DefaultBlueprints)
+            {
+                MyBlueprintsComboBox.Items.Add(item.BlueprintType);
+            }
+        }
+
+        /// <summary>
+        ///     Fires an event when the user changes the comboBox's selected item.
+        /// </summary>
         private void ComboBoxOfBlueprints_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {   
             // If the UI for my blueprints is loaded, fire this event
@@ -66,6 +89,9 @@ namespace ArkManagerApp
                 OnCreateBlueprintSearch?.Invoke(new BlueprintSearchedArgs(this, CreateBlueprintComboBox, CreateBlueprintGrid));         
         }
 
+        /// <summary>
+        ///     Fires an event when the user has clicked the 'Create' button in the blueprint creation tab.
+        /// </summary>
         public void CreateBlueprintButton_Clicked(object sender, RoutedEventArgs e)
         {
             OnTryCreateBlueprintInstance?.Invoke(new TestFieldsForBlueprintCreation(CreateBlueprintGrid));

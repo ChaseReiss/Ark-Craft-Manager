@@ -14,7 +14,7 @@ using Newtonsoft.Json;
 
 namespace ArkManagerApp
 {
-    public struct CreateBlueprintGUI
+    public static class CreateBlueprintGUI
     {
         private static int REMOVE_OUTDATED_UI_ELEMENTS_INDEX = 2;
 
@@ -22,36 +22,18 @@ namespace ArkManagerApp
         {
             TestBlueprintSelection(e);
         }
-
+        
         public static void TestBlueprintSelection(BlueprintSearchedArgs e)
         {
-           
-
-            //string meow = Data.Blueprints.Where(x => x.BlueprintType == e.SearchComboBox.Items.ToString()).Select(y => y.BlueprintType).First();
-            
-            // Finding the matching blueprint the user has selected            
-            //try
-            //{   //.Where(x => x.BlueprintType == e.SearchComboBox.SelectedItem.ToString()).First();
-
-            //    // NEED TO MAKE THIS SAFE, RIGHT NOW IT BLOWS UP IF I TYPE LIKE CHAR 'S' INTO COMBOBOX SEARCH FIELD
-            //    // when it runs and gets 's' maybe we shouldnt use selectedItem maybe something else cause we are trying to select
-            //    Blueprint bp = Data.Blueprints.Where(x => x.BlueprintType == e.SearchComboBox.SelectedItem.ToString()).First();
-
-            //    // Populate the Mainwindow if a blueprint was choosen
-            //    if (bp != null)
-            //    {
-            //        CreatePanelComponents(e, bp);
-            //    }
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("Thats not a blueprint adada");
-            //}                      
+            // Check if the comboBox has a selected item
+            if (e.SearchComboBox.SelectedItem != null)
+            {
+                Blueprint bp = Data.DefaultBlueprints.Where(x => x.BlueprintType == e.SearchComboBox.SelectedItem.ToString()).First();
+                CreatePanelComponents(e, bp);
+            }                     
         }
         public static void CreatePanelComponents(BlueprintSearchedArgs e, Blueprint _selectedBlueprint)
         {
-            // Assigning the blueprint creator the correct blueprint so that we can add their inputs to it (build it)
-
             // Assigning the choosen blueprint to a variable to build off of
             Data.userBlueprint = _selectedBlueprint;
 
@@ -83,18 +65,9 @@ namespace ArkManagerApp
                 // If the name has a _ we need to replace it with a ' ' instead
                 string spaceCharacterAdder()
                 {
-                    // If the string contains a '_' split it there
-                    if (resource.ResourceType.Contains('_'))
-                    {
-                        string[] s = new string[2];
-                        s = resource.ResourceType.Split('_');
-                        return s[0] + " " + s[1];
-                    }
-                    // Otherwise just return it how it already is
-                    else
-                    {
-                        return resource.ResourceType;
-                    }
+                    string[] s = new string[2];
+                    s = resource.ResourceType.Split('_');
+                    return s[0] + " " + s[1];                    
                 }
 
                 // Creating a textbox for user input and adding it to the display panel
@@ -125,7 +98,7 @@ namespace ArkManagerApp
             });
 
             // Wiring up event for when the user attempts to create a new instance of a blueprint
-            ((Button)e.BlueprintCreationGrid.Children[e.BlueprintCreationGrid.Children.Count - 1]).Click += e.MainWindow.CreateBlueprintButton_Clicked;
+            ((Button)e.BlueprintCreationGrid.Children[e.BlueprintCreationGrid.Children.Count - 1]).Click += e.MainWindow.CreateBlueprintButton_Clicked;            
         }
 
         public static async void TryToCreateBlueprintInstance(TestFieldsForBlueprintCreation e)

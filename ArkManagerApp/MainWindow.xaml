@@ -14,15 +14,15 @@
                     <Label Content="Search your blueprints" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Padding="0"/>
                     <ComboBox x:Name="MyBlueprintsComboBox" IsEditable="True" VerticalAlignment="Top" Margin="5,25,0,0" SelectionChanged="ComboBoxOfBlueprints_SelectionChanged" HorizontalAlignment="Left" Width="140"/>
                     <!-- Radio buttons control list's listing method -->
-                    <RadioButton Content="My Blueprints" Height="20" Margin="148,18,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                    <RadioButton Content="Default Blueprints" Height="20" Margin="148,36,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="MyBlueprintsRadioBtn" IsChecked="True" Content="My Blueprints" Height="20" Margin="148,18,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="MyBlueprintsRadioBtn_Checked"/>
+                    <RadioButton x:Name="DefaultBlueprintsRadioBtn" Content="Default Blueprints" Height="20" Margin="148,36,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top" Checked="DefaultBlueprintsRadioBtn_Checked"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Create">
                 <Grid x:Name="CreateBlueprintGrid" Background="White" Height="auto" Margin="0,0,-0.333,-5.333">
 
-                    <Label Content="Select a blueprint" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="140" Padding="0"/>
-                    <ComboBox x:Name="CreateBlueprintComboBox" IsEditable="True" VerticalAlignment="Top" Margin="5,25,0,0" SelectionChanged="ComboBoxOfBlueprints_SelectionChanged" HorizontalAlignment="Left" Width="140"/>
+                    <Label Content="Select a blueprint"  Margin="5,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Padding="0"/>
+                    <ComboBox x:Name="CreateBlueprintComboBox" IsTextSearchEnabled="False" IsEditable="True" VerticalAlignment="Top" Margin="5,25,0,0" SelectionChanged="ComboBoxOfBlueprints_SelectionChanged" HorizontalAlignment="Left" Width="140"/>
                 </Grid>
             </TabItem>
         </TabControl>

@@ -97,3 +97,19 @@ C:\Users\cxr69\OneDrive\Desktop\Ark-Manager\ArkManager\obj\Debug\ArkManager.cspr
 C:\Users\cxr69\OneDrive\Desktop\Ark-Manager\ArkManager\obj\Debug\ArkManager.csproj.CopyComplete
 C:\Users\cxr69\OneDrive\Desktop\Ark-Manager\ArkManager\obj\Debug\ArkManager.dll
 C:\Users\cxr69\OneDrive\Desktop\Ark-Manager\ArkManager\obj\Debug\ArkManager.pdb
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\bin\Debug\ArkManager.dll
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\bin\Debug\ArkManager.pdb
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\obj\Debug\ArkManager.csprojAssemblyReference.cache
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\obj\Debug\ArkManager_MarkupCompile.cache
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\obj\Debug\ArkManager_MarkupCompile.lref
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\obj\Debug\Themes\Generic.baml
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\obj\Debug\ArkManager.g.resources
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\obj\Debug\ArkManager.Properties.Resources.resources
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\obj\Debug\ArkManager.csproj.GenerateResource.cache
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\obj\Debug\ArkManager.csproj.CoreCompileInputs.cache
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\obj\Debug\ArkManager.csproj.CopyComplete
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\obj\Debug\ArkManager.dll
+C:\Users\Chase Roth\Desktop\Ark-Manager\ArkManager\obj\Debug\ArkManager.pdb
